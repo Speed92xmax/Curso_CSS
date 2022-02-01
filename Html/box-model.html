@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de caja Html</title>
+  <link rel="stylesheet" href="../Css/box-model.css">
+</head>
+
+<body>
+  <h1 id="temario-css" class="alinear-centro ">Modelo de caja Html</h1>
+  <ul>
+    <li><a href="index.html">Volver al indice antrerior 👈</a></li>
+    <li><a href="position.html">Posicionamiento 👈</a></li>
+    <li><a href="position-examples.html">Ejersicios de Posicionamiento 👈</a></li>
+    <li><a href="Bootstrap.html">Bootstrap</a></li>
+    <li><a href="box-model.html#overflow-properties">Propiedades de overflow </a></li>
+    <li><a href="box-model.html#float-clear">Propiedades de float & Clear </a></li>
+    <li><a href="box-model.html#sitio-web">centrado de elementos segun su margen</a></li>
+    <li><a href="position.html">Posicionamiento </a></li>
+    <li><a href="units.html">Unidades de medida</a></li>
+    <li><a href="effects_movements.html">Efectos y movimiento</a></li>
+  </ul>
+  <hr>
+
+  <article id="overflow-properties">
+    <h2>Propiedades de overflow</h2>
+    <h4><a href="box-model.html#temario-css">Volver al indice ☝</a></h4>
+
+    <div class="caja-uno">
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe tempore, culpa ipsa eos consectetur
+        reiciendis
+        dolorem fuga reprehenderit magnam eaque totam debitis unde perspiciatis quis similique fugiat laudantium! Est!
+      </p>
+
+    </div>
+
+
+
+    <div class="caja-dos">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe tempore, culpa ipsa eos consectetur
+        reiciendis
+        dolorem fuga reprehenderit magnam eaque totam debitis unde perspiciatis quis similique fugiat laudantium! Est!
+      </p>
+    </div>
+
+  </article>
+
+  <article>
+    <h2>Box Sizing </h2>
+    <h4><a href="box-model.html#temario-css">Volver al indice ☝</a></h4>
+
+    <h4>box-sizing: content-box</h4>
+    <p>Las medidas aplicadas en los estilo se toman a partir del contenido</p>
+
+    <div class="box-sizing">
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe tempore, culpa ipsa eos consectetur
+        reiciendis
+        dolorem fuga reprehenderit magnam eaque totam debitis unde perspiciatis quis similique fugiat laudantium! Est!
+      </p>
+    </div>
+
+    <h4>box-sizing : border-box</h4>
+    <p>Las medidas aplicadas en los estilo se toman a partir del borde</p>
+
+    <div class="box-sizing-border">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe tempore, culpa ipsa eos consectetur
+        reiciendis
+        dolorem fuga reprehenderit magnam eaque totam debitis unde perspiciatis quis similique fugiat laudantium! Est!
+      </p>
+    </div>
+
+  </article>
+
+  <article id="float-clear">
+
+    <h2>Float y Clear </h2>
+    <h4><a href="box-model.html#temario-css">Volver al indice ☝</a></h4>
+    <section>
+      <div class="float-left">este elemento flota a la izquierda</div>
+      <div class="float-right">este elemento flota a la derecha</div>
+    </section>
+
+    <section class="float-center clear-fix">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga optio voluptatem omnis
+      doloremque corporis inventore facere fugit, tempora tenetur id libero non delectus sequi, est labore harum
+      eligendi quia et?
+    </section>
+
+
+  </article>
+  <article id="sitio-web">
+    <h2>Centrado de cajas segun su margen</h2>
+    <h4><a href="box-model.html#temario-css">Volver al indice ☝</a></h4>
+    <pre>
+      Para centrar los elementos se realiza segun sus margenes :
+
+      <b> margin left / right : auto </b>
+      <i><b>( cuidado con los margenes superiores, no es recomentable usar los atajos shortHands en estos casos ) </b></i>
+    </pre>
+    <section class="cajas-web">
+      <header>
+        cabecera
+      </header>
+      <main>
+        cuerpo
+      </main>
+      <footer>
+        footer
+      </footer>
+    </section>
+  </article>
+
+</body>
+
+</html>

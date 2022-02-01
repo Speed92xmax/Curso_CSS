@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temario CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Css/style.css">
+</head>
+
+<body>
+
+  <h1 id="temario-css" class="alinear-centro ">Curso y temario-css de Css3</h1>
+  <hr>
+  <h2 id="temario">temario-css del curso</h2>
+  <ul>
+    <li><a href="box-model.html">Modelo de caja 👉</a></li>
+    <li><a href="position.html">Posicionamiento 👉</a></li>
+    <li><a href="position-examples.html">Ejersicios de Posicionamiento 👉 </a></li>
+    <li><a href="Flexbox.html"> Flexbox👉</a></li>
+    <li><a href="ejersicios-flexbox.html"> Ejersicios flexbox</a></li>
+    <li><a href="Bootstrap.html">Bootstrap</a></li>
+    <li><a href="units.html">Unidades de medida</a></li>
+    <li><a href="effects_movements.html">Efectos y movimiento</a></li>
+  </ul>
+  <br>
+  <ul>
+    <li><a href="index.html#selectores-basicos">Selectores Basicos</a></li>
+    <li><a href="index.html#selectores-avanzados">Selectores Avanzados</a></li>
+    <li> <a href="index.html#pseudo-form"> Pseudo clases</a></li>
+    <li><a href="index.html#pseudo-elementos">Pseudo Elementos</a></li>
+    <li><a href="index.html#agrupar-selectores">Agrupar Selectores</a></li>
+    <li><a href="index.html#algoritmo-CSS">Algoritmo de CSS</a></li>
+    <li><a href="index.html#reset-CSS">Reseteos</a></li>
+    <li><a href="index.html#prefijos-web">Prefijos Web</a></li>
+  </ul>
+
+  <hr>
+
+  <article id="selectores-basicos">
+    <h2>Tema : Selectores Basicos</h2>
+    <p class="alinear-centro "><a href="index.html#temario-css">ir a Indice</a></p>
+
+    <p class="color-de-fondo ">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cum quas nemo ex fuga odit est accusantium velit!
+      Odio quas rerum at beatae minima numquam voluptas quos veniam corrupti iusto.
+
+    </p>
+    <p class=" color-negro">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga nostrum magnam praesentium non reprehenderit vitae
+      ut. Repellat repudiandae impedit earum aliquam nisi! Labore cum reprehenderit minus? Beatae esse fugit dolores?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quas nemo eligendi at, tempora sunt eos a aperiam
+      unde quis impedit officiis in, dicta eum voluptatibus laborum molestias facilis mollitia?
+    </p>
+
+  </article>
+  <hr>
+  <article id="selectores-avanzados">
+    <h2>Selectores avanzados</h2>
+    <p class="alinear-centro "><a href="index.html#temario-css">ir a Indice</a></p>
+
+    <!-- Selectores -->
+    <h3><b>Selector de hijos</b></h3>
+
+    <ul class="hijos-directos">
+      <li><b>verano</b></li>
+      <li><b>invierno</b></li>
+      <li>primavera</li>
+      <li><b>otoño</b></li>
+    </ul>
+
+    <br>
+
+    <!-- Selector de desendientes general  -->
+    <h3><b>Selector de hermanos</b></h3>
+
+    <h4>Selector de hermanos ( en general ) </h4>
+    <ul>
+      <li class="hermanos-general">verano</li>
+      <li>invierno</li>
+      <li>primavera</li>
+      <li>otoño</li>
+    </ul>
+
+    <h4>Selector de hermanos ( en adjacentes) </h4>
+    <ul>
+      <li>verano</li>
+      <li class="hermanos-adjacente">invierno</li>
+      <li>primavera</li>
+      <li>otoño</li>
+    </ul>
+
+    <h4>Selector por atributos</h4>
+
+    <nav class="selectores-atributo">
+
+      <li><a href="" target="index.html#temario-css">inicio</a></li>
+      <li><a href="" target="_blank">cursos</a></li>
+      <li><a href="" target="_blank">blog</a></li>
+      <li><a href="https://www.google.com" target="_">notas</a></li>
+      <li><a href="" target="_blank">Curriculum</a></li>
+      <li><a href="" target="_blank">Ahora</a></li>
+
+    </nav>
+
+
+  </article>
+  <hr>
+  <article id="pseudo-form">
+    <h2>Pseudo clases</h2>
+    <p class="alinear-centro "><a href="index.html#temario-css">ir a Indice</a></p>
+
+
+    <form class="pseudo-formulario">
+      <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+      <br>
+      <input type="email" name="Email" placeholder="Escribe tu correo" required>
+      <br>
+      <input type="submit" name="Enviar">
+    </form>
+
+    <nav class="pseudo-nav">
+
+      <il><a href="">boton 1</a></il>
+      <il><a href="">boton 2</a></il>
+      <il><a href="">boton 3</a></il>
+
+    </nav>
+
+    <ol class="pseudo-child">
+      <ol>
+        <li> Casa numero 1</li>
+        <li> Casa numero 2</li>
+        <li> Casa numero 3</li>
+        <li> Casa numero 4</li>
+        <li> Casa numero 5</li>
+        <li> Casa numero 6</li>
+        <li> Casa numero 7</li>
+        <li> Casa numero 8</li>
+        <li> Casa numero 9</li>
+        <li> Casa numero 10</li>
+        <li> Casa numero 11</li>
+        <li>Casa numero 12</li>
+      </ol>
+    </ol>
+  </article>
+  <hr>
+  <article id="pseudo-elementos">
+    <h2>Pseudo Elementos</h2>
+    <p class="alinear-centro "><a href="index.html#temario-css">ir a Indice</a></p>
+
+    <p>
+      <i>figuras de venta</i> <span class="saga degeminis"> Saga de geminis </span><span class="precio">500</span>
+    </p>
+
+    <p class="p-pseudo">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque eveniet modi debitis culpa exercitationem
+      repudiandae, perspiciatis placeat totam et eius pariatur vitae sit consequatur. Vero modi aliquid magnam dicta
+      nisi.
+    </p>
+
+    <input class="input-pseudo" type="text" name="Nombre" placeholder="Escribe tu nombre">
+  </article>
+  <hr>
+  <article id="agrupar-selectores">
+    <h2>Agrupar Selectores</h2>
+    <p class="alinear-centro "><a href="index.html#temario-css">ir a Indice</a></p>
+
+    <form class="form-agrupar-selectores">
+
+      <input type="text" name="Nombre" placeholder="Escribe tu nombre">
+      <input type="email" name="Email" placeholder="Escribe tu email">
+      <textarea name="Comentarios" placeholder="Escribe un comentario" cols="30" rows="10"></textarea>
+      <input type="submit">
+    </form>
+
+
+
+  </article>
+
+  <article id="algoritmo-CSS">
+    <h2>Algoritmo de CSS</h2>
+    <p class="alinear-centro "><a href="index.html#temario-css">ir a Indice</a></p>
+    <pre>
+
+              El Algoritmo de CSS: Es la forma en que el navegador aplica los estilos al documento HTML. Es vital entender este
+              concepto para que entiendas como se aplican y en algunas ocasiones se sobreescriben las reglas CSS.
+              1) La Cascada.
+              2) La Especificidad.
+              3) La Herencia.
+
+              La Cascada es el mecanismo en que el navegador aplica los estilos. Y toma en cuenta lo siguiente en este orden:
+              1) El Origen del Código:
+              - El User Agent (los estilos por defecto del navegador)
+              - Personalizaciones del usuario.
+              - Los estilos del autor.
+              2) La Especificidad del Selector
+              3) Orden de Aparición
+
+              La Especificidad es el peso que tiene un selector cuando hay conflicto de estilos. Se calcula de la siguiente forma:
+              Etiquetas y pseudoelementos -------------- 0,0,0,1
+              Clases, atributos y pseudoclases ------------0,0,1,0
+              Identificadores -------------------------------0,1,0,0
+              Estilos en línea--------------------------------1,0,0,0
+              !important ------------------Rompe la especificidad
+
+              La Herencia, es la capacidad de un selector de obtener (heredar) los valores de sus ancestros más cercanos, para
+              aplicarla se usa el valor inherit, si queremos evitarla podemos asignar otro valor o inicializar la propiedad en
+              cuestión con el valor initial
+              https://web.dev/learn/css/inheritance/#which-properties-are-inheritable
+              
+
+</pre>
+
+    <blockquote class="cita-marco" id="cita-marco">Esta es una frase maricota <cite> Marco aurelio</cite></blockquote>
+
+  </article>
+
+  <article id="reset-CSS">
+    <h2>Reseteo Css</h2>
+    <p class="alinear-centro "><a href="index.html#temario-css">ir a Indice</a></p>
+    <h3>Hojas de estilos pre escritas para resetear</h3>
+    <br>
+    <pre>
+      Recuerda que para cargar estas hojas de estilo, es mejor hacerlo por separado, en las etiquetas meta  
+
+      Ejmp: 
+
+         link rel="stylesheet" href="style.css" ( aqui cargas la hoja de estilos de reseteo )
+
+    </pre>
+
+    <p>
+      Hojas de reseteo : <a href="https://necolas.github.io/normalize.css/" target="_blank"> Pagina de normalize</a><br>
+      Hojas de reseteo : <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank"> CSS reset</a>
+    </p>
+
+
+
+  </article>
+
+  <article id="prefijos-web">
+    <h2>Prefijos para navegadores</h2>
+    <p class="alinear-centro "><a href="index.html#temario-css">ir a Indice</a></p>
+    <h3>Listado de prefijos segun los navegadores </h3>
+
+    <ul>
+      <li>navegadores de microsoft <code><b>-ms-</b></code> </li>
+      <li>Firefox <code><b>-moz-</b></code></li>
+      <li>Todos los navegadores <code><b>-webkit-</b></code></li>
+
+      <h4> Links para referencias</h4>
+      <a href="https://caniuse.com/" target="_blank"> Pagina que te indica que etiquetas soportan segun los
+        navegadores</a>
+      <br>
+      <a href="https://autoprefixer.github.io/" target="_blank">Autoprefixer</a>
+
+
+    </ul>
+  </article>
+
+</body>
+
+
+
+</html>

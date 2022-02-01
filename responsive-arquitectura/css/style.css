@@ -1,0 +1,113 @@
+/* * CLASES GLOBALES ---------------------------------*/
+
+[class^="box"] {
+  border-radius: 8px;
+  background-color: bisque;
+}
+
+.container-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+
+/* *-------------------------------------------------------------------------- */
+/* * 1.A -CONTENEDORES FLEXIBLES  ---------------------------------*/
+
+.box {
+  width: 300px;
+  height: 300px;
+}
+.box-flexible {
+  width: 50vw;
+  height: 300px;
+}
+
+.box-flexible-2 {
+  width: 100%;
+  max-width: 960px;
+  min-width: 280px;
+  max-height: 480px;
+  min-height: 280px;
+}
+
+/* *-------------------------------------------------------------------------- */
+/** Multimedia Flexible ---------------------------------*/
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.responsive-media {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /*  este es el numero de formato widescreen */
+}
+
+.responsive-media > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.aspect-ratio-16_9 {
+  aspect-ratio: 16/9;
+}
+
+/* *-------------------------------------------------------------------------- */
+/** MEDIA QUERIES ---------------------------------*/
+
+@media print {
+  @page {
+    size: A3 landscape;
+  }
+
+  body {
+    font-size: 12pt;
+    color: red;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduced) {
+}
+
+/* Para modificar el color de fondo  segun el color de tema del sistema del usuario */
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: white;
+  }
+}
+@media screen and (prefers-color-scheme: no-preference) /* valor por defecto */ {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+/* Media queries mas usadas ( tamaños de pantalla ) */
+
+/* Mobile First */
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: darkkhaki;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: white;
+  }
+}
+
+/* Desktop First */
+
+@media screen and (max-width: 1024px) {
+  body {
+    color: darkmagenta;
+  }
+}

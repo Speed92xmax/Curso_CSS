@@ -1,0 +1,201 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  font-family: "roboto";
+  color: rgb(42, 141, 187);
+  text-decoration: none;
+}
+
+.alinear-centro {
+  text-align: center;
+}
+
+article#algoritmo-CSS blockquote {
+  margin: 0px;
+}
+.color-negro {
+  color: #353434;
+}
+
+.color-blanco {
+  color: whitesmoke;
+}
+
+.color-de-fondo {
+  background-color: burlywood;
+}
+
+.Font-Monserrat {
+  font-family: "roboto";
+}
+
+/* ---------------------------------------------------------- */
+/* Selectores Avanzados */
+
+* {
+  font-family: "montserrat";
+}
+.hijos-directos {
+  background-color: cornflowerblue;
+}
+.hijos-directos li {
+  font-family: "montserrat";
+}
+
+.hijos-directos li b {
+  background-color: darkgreen;
+}
+
+.hermanos-general ~ li {
+  font-size: 32px;
+}
+.hermanos-adjacente + li {
+  font-size: 32px;
+}
+/* ---------------------------------------------------------- */
+/* Selectores de atributos */
+
+/* selector por atributo segun cualquier paralabra (*)  */
+.selectores-atributo a[target*="temario"] {
+  background-color: chartreuse;
+}
+
+/* selector por atributo   */
+.selectores-atributo a[target] {
+  background-color: rgb(13, 14, 12);
+}
+
+/* selector por atributo segun su inicio (^)  */
+.selectores-atributo a[href^="http"] {
+  text-decoration: none;
+  background-color: coral;
+}
+
+/* selector por atributo segun su final ($)  */
+.selectores-atributo a[href$=".com"] {
+  text-decoration: none;
+  background-color: coral;
+}
+
+/* ---------------------------------------------------------- */
+/* Pseudo Clases */
+
+.pseudo-formulario *:invalid {
+  border-color: rgb(187, 36, 36);
+}
+.pseudo-formulario *:valid {
+  border-color: rgb(66, 187, 36);
+}
+.pseudo-nav a:visited {
+  color: rgb(56, 38, 22);
+}
+.pseudo-nav a:hover {
+  color: sandybrown;
+}
+.pseudo-formulario input[type="submit"]:hover {
+  background-color: seagreen;
+}
+#temario-css:target {
+  font-size: 42px;
+}
+.pseudo-child :nth-child(3n) {
+  color: lightsalmon;
+}
+.pseudo-child :nth-child(even) {
+  color: rgb(168, 56, 11);
+}
+.pseudo-child :nth-child(odd) {
+  color: rgb(11, 168, 89);
+}
+/* ---------------------------------------------------------- */
+/* Pseudo Elementos */
+.saga-de-geminis::before {
+  content: "😍";
+}
+.saga-de-geminis::after {
+  content: "🚲";
+}
+.precio::before {
+  content: "$";
+  font-weight: bold;
+}
+.precio::after {
+  font-weight: bold;
+  content: " Dolares";
+}
+.p-pseudo::first-letter {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.p-pseudo::first-line {
+  color: rgb(185, 238, 41);
+}
+.p-pseudo::selection {
+  background-color: rgb(12, 100, 172);
+  font-size: 42px;
+}
+.input-pseudo::placeholder {
+  color: blue;
+}
+/* ---------------------------------------------------------- */
+/* Agrupar selectores */
+
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+  display: block;
+  width: 300px;
+  border-width: 3px;
+  border-style: dotted;
+}
+
+/* ---------------------------------------------------------- */
+/* Algoritmo de CSS */
+
+/* 
+El Algoritmo de CSS: Es la forma en que el navegador aplica los estilos al documento HTML. Es vital entender este concepto para que entiendas como se aplican y en algunas ocasiones se sobreescriben las reglas CSS.
+  1) La Cascada.
+  2) La Especificidad.
+  3) La Herencia.
+La Cascada es el mecanismo en que el navegador aplica los estilos. Y toma en cuenta lo siguiente en este orden:
+  1) El Origen del Código:
+    - El User Agent (los estilos por defecto del navegador)
+    - Personalizaciones del usuario.
+    - Los estilos del autor.
+  2) La Especificidad del Selector
+  3) Orden de Aparición
+La Especificidad es el peso que tiene un selector cuando hay conflicto de estilos. Se calcula de la siguiente forma:
+  Etiquetas y pseudoelementos -------------- 0,0,0,1
+  Clases, atributos y pseudoclases ------------0,0,1,0
+  Identificadores -------------------------------0,1,0,0
+  Estilos en línea--------------------------------1,0,0,0
+  !important ------------------Rompe la especificidad
+La Herencia, es la capacidad de un selector de obtener (heredar) los valores de sus ancestros más cercanos, para aplicarla se usa el valor inherit, si queremos evitarla podemos asignar otro valor o inicializar la propiedad en cuestión con el valor initial
+https://web.dev/learn/css/inheritance/#which-properties-are-inheritable
+*/
+
+.cita-marco {
+  background-color: lightslategray;
+  font-size: 32px;
+  border-style: dotted;
+  border-color: rgb(23, 23, 199);
+}
+
+.cita-marco cite {
+  background-color: lightgreen;
+  background-color: inherit;
+  font-size: initial;
+}
+
+/* ---------------------------------------------------------- */
+h2 {
+  text-align: center;
+  border-radius: 3px;
+}
+
+.texto32 {
+  font-size: 32px;
+}

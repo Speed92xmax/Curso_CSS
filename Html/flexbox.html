@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="../Css/normalize.css" />
+  <link rel="stylesheet" href="../Css/flexbox-style.css" />
+</head>
+
+<body>
+  <h1 id="temario-css" class="alinear-centro">Curso y temario-css de Css3</h1>
+  <h2 id="temario">temario-css del curso</h2>
+  <hr />
+  <ul>
+    <li><a href="index.html">Volver al indice principal 👈</a></li>
+    <li><a href="box-model.html">Modelo de caja 👉</a></li>
+    <li><a href="position.html">Posicionamiento 👉</a></li>
+    <li>
+      <a href="position-examples.html">Ejersicios de Posicionamiento 👉 </a>
+    </li>
+    <li>
+      <a href="Flexbox.html"> Flexbox👉</a>
+      <ul>
+        <li><a href="ejersicios-flexbox.html"> Ejersicios flexbox</a></li>
+      </ul>
+    <li><a href="Bootstrap.html">Bootstrap</a></li>
+    </li>
+    <li><a href="units.html">Unidades de medida</a></li>
+    <li><a href="effects_movements.html">Efectos y movimiento</a></li>
+  </ul>
+  <hr />
+
+  <article>
+    <h2>Metodologia Flexbox</h2>
+    <h4>Display : flex</h4>
+    <p>Su comportamiento es en bloque</p>
+
+    <section class="container">
+      <article class="items">Flex item 1</article>
+      <article class="items">Flex item 2</article>
+      <article class="items">Flex item 3</article>
+    </section>
+
+    <section class="container">
+      <article class="items">Flex item 1</article>
+      <article class="items">Flex item 2</article>
+      <article class="items">Flex item 3</article>
+    </section>
+  </article>
+  <article>
+    <h4>Display : inline-flex</h4>
+    <p>Su comportamiento es en linea</p>
+
+    <section class="container2">
+      <article class="items">Flex item 1</article>
+      <article class="items">Flex item 2</article>
+      <article class="items">Flex item 3</article>
+    </section>
+
+    <section class="container2">
+      <article class="items">Flex item 1</article>
+      <article class="items">Flex item 2</article>
+      <article class="items">Flex item 3</article>
+    </section>
+  </article>
+  <article>
+    <h4>Flex-direction</h4>
+
+    <section class="container3">
+      <article class="items">Flex item 1</article>
+      <article class="items">Flex item 2</article>
+      <article class="items">Flex item 3</article>
+    </section>
+
+    <section class="container3">
+      <article class="items">Flex item 1</article>
+      <article class="items">Flex item 2</article>
+      <article class="items">Flex item 3</article>
+    </section>
+  </article>
+  <article>
+    <h4>Flex-wrap</h4>
+    <p>Shorthand ( flex-flow: {row/column} || {wrap/nowarp} )</p>
+
+    <section class="container4">
+      <article class="items">flex item 1</article>
+      <article class="items">flex item 2</article>
+      <article class="items">flex item 3</article>
+      <article class="items">flex item 4</article>
+      <article class="items">flex item 5</article>
+      <article class="items">flex item 6</article>
+      <article class="items">flex item 7</article>
+      <article class="items">flex item 8</article>
+      <article class="items">flex item 9</article>
+      <article class="items">flex item 10</article>
+      <article class="items">flex item 11</article>
+      <article class="items">flex item 12</article>
+      <article class="items">flex item 13</article>
+      <article class="items">flex item 14</article>
+      <article class="items">flex item 15</article>
+    </section>
+  </article>
+  <article>
+    <h4 id="llamado1">Justify Content</h4>
+
+    <pre>
+      notas: 
+
+      <b>Define la alineacion de los hijos en el eje principal ( main axis definido por "flex-direction : row / column"</b>
+
+    <code>
+      justify-content: flex-start;
+      justify-content: center;
+      justify-content: flex-end;
+      justify-content: space-between;
+      justify-content: space-around;
+      justify-content: space-evenly;
+    </code>
+
+</pre>
+
+    <div class="contenedor">
+      <button id="justify-start"><a href="#llamado1">inicio</a></button>
+      <button><a href="#container5">centro</a></button>
+    </div>
+
+    <div id="container5">
+      <div class="items">item 1</div>
+      <div class="items">item 2</div>
+      <div class="items">item 3</div>
+      <div class="items">item 3</div>
+      <div class="items">item 3</div>
+      <div class="items">item 3</div>
+      <div class="items">item 3</div>
+      <div class="items">item 3</div>
+      <div class="items">item 3</div>
+    </div>
+  </article>
+  <article>
+    <h3>Align items & Align content</h3>
+    <h4>
+      Define el comportamiento de los elementos en el eje restante ( cross
+      axis)
+    </h4>
+    <pre>
+      notas:
+      <b>
+        Align items ( alinear los elementos dentro de una misma fila/columna)
+      </b>
+      <code>
+       align-items: stretch;
+       align-items: flex-start;
+       align-items: center;
+       align-items: flex-end;    
+       align-items: baseline;
+      </code>
+     <b>
+        Align content (alinear todos los hijos dentro del contenedor padre)
+     </b>
+     <code>
+       align-content: stretch;
+       align-content: flex-start;
+       align-content: center;
+       align-content: flex-end;
+       align-content: space-between;
+       align-content: space-around;
+      </code>
+    </pre>
+    <article>
+      <div class="container6">
+        <div class="items">item 1</div>
+        <div class="items">item 2</div>
+        <div class="items">item 3</div>
+        <div class="items">item 4</div>
+        <div class="items">item 5</div>
+        <div class="items">item 6</div>
+        <div class="items">item 7</div>
+        <div class="items">item 8</div>
+        <div class="items">item 9</div>
+        <div class="items">item 10</div>
+        <div class="items">item 11</div>
+        <div class="items">item 12</div>
+      </div>
+    </article>
+
+  </article>
+  <article class="flex-grow">
+
+    <h3>Flex-grow y Flex-Shink</h3>
+
+    <pre>
+      Notas:
+
+      Flex-grow se usa para determinar el factor de crecimiento de los elementos segun el espacio del contenedor padre.
+
+      <code>flex-grow: 0 | 1 | 2</code>
+  
+    </pre>
+
+    <section class="flex-container-grow">
+      <div class="items">Item Factor de crecimiento <b>x1</b></div>
+      <div class="items">Item Factor de crecimiento <b>x4</b></div>
+      <div class="items">Item Factor de crecimiento <b>x1</b></div>
+    </section>
+
+  </article>
+  <article class="flex-shrink">
+
+    <h3>Flex-grow y Flex-Shink</h3>
+
+    <pre>
+      Notas:
+
+      Flex-shrink se usa para determinar el factor para encoger los elementos segun el espacio del contenedor padre.
+
+      <code>flex-shrink: 0 | 1 | 2</code>
+  
+      Para eliminar la caracteristica de encogerse de los elementos el valor pre-determinado es <b> 0</b>
+
+    <code> flex-shrink= 0; </code>
+
+    </pre>
+
+    <section class="flex-container-shrink">
+      <div class="items">Item Factor para encogerse <b>x1</b></div>
+      <div class="items">Item Factor para encogerse <b>x4</b></div>
+      <div class="items">Item Factor para encogerse <b>x1</b></div>
+    </section>
+
+  </article>
+  <article class="flex-basis">
+
+    <h3>Flex-basic</h3>
+
+    <pre>
+        Notas:
+
+        Determina el tamaño del hijo dentro del main axis del padre ( columna o fila) 
+
+        Si el contenedor tiene propiedad  <code>Flex-direction: row</code>  flex-basis representara el width de los elementos hijos.
+
+        Si el contenedor tiene propiedad  <code> Flex-direction: Column</code> flex-basis representara el height de los elementos hijos.
+
+        Este valor ignora las propiedades <code>height</code> o <code>width</code>  previamente establecidos.
+
+        <b>el Shorthand para estas 3 propiedades seria  <code>flex : grow(0)|shrink (1)|basis (auto)</code></b>
+
+        </pre>
+
+
+
+    <section class="flex-container-basis">
+      <div class="items">Item basis 1</div>
+      <div class="items">Item basis 2</div>
+      <div class="items">Item basis 3</div>
+    </section>
+
+  </article>
+  <article class="flex-order">
+
+    <h3>Order</h3>
+
+    <pre>
+        Notas:
+
+        Determina el orden de los elementos hijos dentro de un contenedor flex.
+
+        <code> order : 0 ( valor por defecto)</code>
+
+        El orden se determinara segun el valor de esta propiedad aplicada a 
+        
+        los hijos, estando los valores negativos de primero, seguidor por valores en 0 y posterior a los valores por encima de  (1-2-3-4).
+
+        </pre>
+
+
+
+    <section class="flex-container-order">
+
+      <div class="items">Item order 1</div>
+      <div class="items">Item order 2</div>
+      <div class="items">Item order 3</div>
+      <div class="items">Item order 4</div>
+      <div class="items">Item order 5</div>
+      <div class="items">Item order 6</div>
+      <div class="items">Item order 7</div>
+      <div class="items">Item order 8</div>
+      <div class="items">Item order 9</div>
+      <div class="items">Item order 10</div>
+
+    </section>
+
+  </article>
+  <article class="Aling self">
+
+    <h3>Aling-self</h3>
+
+    <pre>
+        Notas:
+
+        Sobreescribe los valores de la propiedad <code>aling-items</code> para el elemento especificado ( al cual se le aplica esta propiedad )
+
+        <code> aling-self : 
+
+        align-self: auto;
+        align-self: flex-start;
+        align-self: center;
+        align-self: flex-end;
+        align-self: baseline;
+        align-self: stretch;
+  
+        </code>
+
+        </pre>
+
+
+
+    <section class="flex-container-aling">
+
+      <div class="items">Item aling 1</div>
+      <div class="items">Item aling 2</div>
+      <div class="items">Item aling 3</div>
+
+
+    </section>
+
+  </article>
+
+
+</body>
+
+</html>

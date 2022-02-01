@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../Css/units_css.css">
+  <title>Unidades de medidas</title>
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li><a href="index.html">Volver al indice principal </a></li>
+      <li><a href="box-model.html">Modelo de caja </a></li>
+      <li><a href="position.html">Posicionamiento </a></li>
+      <li><a href="position-examples.html">Ejersicios de Posicionamiento </a> </li>
+      <li><a href="Flexbox.html"> Flexbox</a>
+      <li><a href="ejersicios-flexbox.html"> Ejersicios flexbox</a></li>
+      <li><a href="Bootstrap.html">Bootstrap</a></li>
+      <li><a href="grid.html">Css grid</a></li>
+      <li><a href="units.html">Unidades de medida</a></li>
+      <li><a href="effects_movements.html">Efectos y movimiento</a></li>
+    </ul>
+  </header>
+
+  <hr style="margin: 1rem 0">
+
+  <!-- NAVBAR -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#top"> Unidades de medida</a></li>
+      <li><a href="#variable">Variables y propiedades</a></li>
+      <li><a href="#font-text-styles">Propiedades de texto y fuentes</a></li>
+      <li><a href="#text-properties">Propiedades de texto</a></li>
+      <li><a href="#icons">Iconos</a></li>
+      <li><a href="#border-outlines">Propiedades de border</a></li>
+      <li><a href="#backgrounds">Propiedades de Background</a></li>
+      <li><a href="#img_properties">Estilos y Propiedades de las IMG</a></li>
+      <li><a href="#list_items">Estilos de elementos lista</a></li>
+      <li><a href="#forms">Formularios</a></li>
+      <li><a href="#ejercicios">Ejercicios sueltos</a></li>
+
+    </ul>
+  </nav>
+
+  <!-- UNIDADES DE MEDIDA -->
+  <section id="units">
+
+    <h2>Unidades de medida</h2>
+    <a href="#top"><img src="up-arrow.png" alt=""></a>
+
+
+    <article class="notas">
+      <h3>Notas :</h3>
+      <ul>
+        <li>
+          Existen 2 tipos de unidades generales , <b>absolutas</b> y unidades <b>relativas</b>; ejm de unidades
+          absolutas:
+          pc, mm, in, pt(1/72
+          in), px ( 1/96 in)
+        </li>
+        <li>
+          El tamaño de la fuente preeterminada de los navegadores de 16px
+        </li>
+        <li>
+          Las unidades relativas son aquellas cuyo valor dependera de su elemento contenedor o contexto . ejm: em, rem,
+          ex, ch, %, tamaño de viewport ( vw, vh, vmin, vmax):
+        </li>
+        <li>
+          Para mas info visitar <a href="http://pxtoem.com/" target="_blank"> www.pxtoem.com</a>
+        </li>
+        <li>
+          Es recomendable que para tamaños de fuentes se usen unidades relativas.
+        </li>
+      </ul>
+    </article>
+    <div class="nav-inside">
+      ooo
+    </div>
+    <section class="cont-info-desing">
+
+      <article class="container-info">
+
+        <article class=" pixels container-inside">
+          <h3>Pixels</h3>
+
+          <p class="text-center">La unidad de medida <b>pixels</b> se considera una unidad de medicion absoluta, es una
+            medida que tiene un
+            valor en el mundo real que equivale a 1/96 pulgadas y dicha medida no es variable </p>
+
+          <br>
+
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellat amet
+            consequuntur cumque aliquid,
+            beatae tenetur nam quidem dolore ut, sequi excepturi quisquam? Sit ex, repellat necessitatibus molestiae ab
+            distinctio.</p>
+        </article>
+
+        <article class=" container-inside">
+          <h3>Em's</h3>
+          <p class="text-center">Es una unidad de medida relativa cuyo valor depende del tamaño de la fuente del
+            elemento
+            contenedor, en este caso
+            se basa en el tamaño de la letra "M" de cualquier texto . El valor de su unidad es de 16 px ( 1 em )</p>
+
+          <br>
+          <p class="text-center">
+            ( contenedor <code> font-size: 16px </code>)
+          </p>
+          <br>
+          <p class="text-center ems">
+            Esto es un texto con tamaño de 2em y equivale a 32 px
+          </p>
+
+        </article>
+
+        <article class=" container-inside">
+          <h3>Rem's ( root em's )</h3>
+          <p class="text-center">Es una unidad de medida relativa cuyo valor depende del tamaño de la fuente del
+            elemento
+            raiz, ( documento html ) </p>
+
+          <br>
+          <p class="text-center">
+            ( documento HTML <code> font-size: 16px </code>)
+          </p>
+          <br>
+          <p class="text-center rems">
+            Esto es un texto con tamaño de <b>3rem</b> y equivale a 48 px
+          </p>
+
+        </article>
+
+
+        <article class=" container-inside">
+
+          <h3>Porcentaje (%)</h3>
+
+          <p class="text-center">Es una unidad de medida relativa cuyo valor depende del tamaño directo de su
+            contenedor.
+            Cuando hablamos de tamaños tipograficos, <b></b> 100% del tamaño, equivale a 16px </b> ( base de tamaño
+            tipografico del documento html)
+          </p>
+
+          <br>
+
+          <p class="text-center">
+            ( Elemento contenedor <code> width: 1000px </code>)
+          </p>
+
+          <br>
+
+          <p class="text-center porcentages" style=" text-align: start;border: thin solid black; padding: 10px;">
+            Esto es un contenedor con tamaño de <b>80%</b>
+          </p>
+
+          <br>
+
+          <p style="font-size: 200%;text-align: center;">
+            Esto es un texto con tamaño de <b>200%</b> que equivale a 32px
+          </p>
+
+        </article>
+
+    </section>
+
+
+  </section>
+  <!-- VARIABLES EN CCS -->
+  <section id="variable">
+
+    <h2>Variables y Custom Properties en Css</h2>
+    <a href="#top"><img src="up-arrow.png" alt=""></a>
+
+    <article class="notas">
+      <h3>Notas :</h3>
+      <ul>
+        <li>
+          Css al igual que los lenguajes de programacion, tiene un apartado de variables, las cuales tienen
+          comportamientos similares, como lo es el alamacenamiento de informacion general
+        </li>
+        <li>
+          El scope de accion de estas variables se limita al contenedor donde fue declarada ejm:
+          <pre>
+            <code>
+   #container{
+     --primary-color="#fff"
+   }
+   .item-container{
+     background-color=var(primary-color)
+   }
+            </code>
+          </pre>
+        </li>
+        <li>
+          Para declarar una variable en Css se usa el doble guion medio <b>"--nombre de variable"</b>
+        </li>
+        <li>
+          Para llamar a una variable en Css se usa la palabra reservada <b>var( --primary-color, Parametro 2 (opcional)
+            )</b> , la cual
+          acepta 2 parametros
+          separados por una coma, siendo el primero el nombre de la variable en cuestion y el segundo un respaldo el
+          cual se ejecutara en caso de que la variable no contenga ninguna informacion o no se pueda procesar
+        </li>
+        <li>
+          Para declarar variables globales se puede hacer uso de la pseudo clase <b>:root</b> la cual se aplica al
+          documento general HTML, esta es la opcion mas usada y recomendada para aplicar estilos generales y que su
+          alamacenamiento no afecte al documento en cuestion.
+        </li>
+        <li>
+          Existen distintos tipos de funciones dentro de CSS, ejm:
+          <br>
+
+          <ul>
+            <li>
+              variables = <code> var () </code>
+            </li>
+            <li>
+              Links o url para llamar documentos externos = <code> url() </code>
+            </li>
+            <li>
+              Calculos aritmeticos =<code> calc() </code>
+            </li>
+            <li>
+              Valores minimos y maximos = <code>min() & max()</code>
+              <ul>
+                <li>
+                  Esta funcion sirve para establecer comparativas entre los valores asignados a la variable, tomando
+                  como referencia el mayor o el menor dependiento de la funcion que se use
+                </li>
+                <li>
+                  El uso de estas funciones se recomienda para realziar cambios dinamicos sin uso de @mediaquerys ya que
+                  con esta funcion una propiedad podria tener distintos valores asignados y por lo general se debe
+                  realizar la comparativa entre valores absolutos y relativos.
+                </li>
+                <li>
+                  En el caso de <code>min(20px, 25vh)</code>, esto quiere decir que tomara como valor el minimo entre
+                  los 2 parametros asignados. Cuando el valor de 25vh sea mayor a 20px, el valor asignado sera 20 px.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Valores minimos, medios, maximos = <code>clamp( min | med | max )</code>
+            </li>
+          </ul>
+
+
+
+        </li>
+      </ul>
+    </article>
+    <div class="nav-inside">
+      ooo
+    </div>
+    <section class="cont-info-desing">
+
+      <article class="container-info">
+        <article class="container-info container-variable" style="grid-column: 1/ span 3;border-radius: 8px;">
+          <p>
+            Esta seccion fue creada con variables establecidas en la pseudo clase :root
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi odio ad, quos cupiditate, modi tempore
+            repudiandae
+            quas earum ipsa ut mollitia quia delectus expedita, nesciunt aliquam ipsum tempora sequi porro.
+          </p>
+        </article>
+      </article>
+    </section>
+  </section>
+  <!-- ESTILO DE FUENTE -->
+  <section id="font-text-styles">
+    <h2>Propiedades de texto y fuentes</h2>
+    <a href="#top"><img src="up-arrow.png" alt=""></a>
+    <article class="notas">
+      <h3>Notas :</h3>
+      <ul>
+        <li>
+          Son todas aquellas propiedades que afectan a las tipografias:
+          <br>
+
+          <ul>
+            <li>
+              font-family = Nombre de la familia tipografica
+            </li>
+            <li>
+              font-size = tamaño de la tipografia
+            </li>
+            <li>
+              font-style = tipo de estilo ( cursiva,oblicua, normal)
+            </li>
+            <li>
+
+              font-variant = variacion entre mayusculas y minusculas
+            </li>
+            <li>
+              font-weight = peso de la tipografia
+            </li>
+            <li>
+              line-height = altura de linea o interlineado
+            </li>
+          </ul>
+
+        </li>
+        <li>
+          Para importar archivos tipograficos personalizados o externos se ua la regla en ccs de
+          <code> @font-face{} </code>.
+          <br>
+          <ol>
+            <li>
+              El primer parametro que se tiene que aplicar sera el nombre de la familia tipografia ejm :
+              <code>font-family : "nombre de la tipografia a agregar"</code>
+              <br><br>
+              <i>" Es recomendable el uso de una segunda familia tipografica precargada en caso de que la tipografia que
+                se quiere importar no pueda cargar "</i>
+            </li>
+            <li>
+              Para poder cargar una tipografia externa al documento, se usa la propiedad
+              <code>src = url ("../nombre de la carpeta / nombre del archivo")</code> ( el archivo tiene que estar
+              guardado en formato
+              woff | woff2 (Web Open Font Format) )
+            </li>
+
+          </ol>
+        </li>
+      </ul>
+    </article>
+    <div class="nav-inside">
+      ooo
+    </div>
+    <section class="cont-info-desing">
+
+      <article class="container-info">
+        <article class="container-info font-century_gothic" style="grid-column: 1/ span 3;">
+          <h2 style="grid-column: 1/ span 3;"> Familia tipografica importada</h2>
+          <p style="grid-column: 1/ span 3;text-align: center;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus velit ipsum quasi inventore culpa
+            doloribus
+            rem quaerat error impedit atque saepe unde debitis similique dolor, ipsa ratione nemo exercitationem
+            commodi.
+          </p>
+
+
+        </article>
+      </article>
+    </section>
+  </section>
+  <!-- PROPIEDADES DE TEXTO -->
+  <section id="text-properties">
+
+    <h2>Propiedades de Texto</h2>
+    <a href="#top"><img src="up-arrow.png" alt=""></a>
+
+    <article class="notas">
+      <h3>Notas :</h3>
+      <ul>
+        <li>
+          Las propiedades que vienen con la etiqueta text son:
+          <br>
+          <ol>
+            <li>
+              text-align = permite alinear el texto de manera horizontal
+            </li>
+            <li>
+              text-decoration = Activa o desactiva el delineado superior o inferior del texto
+            </li>
+            <li>
+              text-indent= crea sangruias en el inicio de los textos
+            </li>
+            <li>
+              text-overflow= coloca puntos suspensivos cuando el texto desborda el contenedor
+              <code> text-overflow: cliped | elipsis </code>
+              <br><br>
+              <ul>
+                <i>Para que testa propiedad se aplique, previamene hay que declarar las propiedades
+                  <code>overflow: hidden & white-space: nowrap;</code></i>
+              </ul>
+            </li>
+            <li>
+              letter-spacing
+            </li>
+            <li>
+              text-transform = activa las propiedades de capitalizacion : mayusculas, minusculas, cammelcase , etc
+            </li>
+            <li>
+              white-space = controla el comportamiento del texto con respecto al espacio en blanco ( respeta saltos de
+              linea) <code> normal | nowrap | pre | pre-wrap | pre-lines </code>
+            </li>
+          </ol>
+        </li>
+      </ul>
+    </article>
+
+    <div class="nav-inside">
+      ooo
+    </div>
+
+    <section class="cont-info-desing">
+
+
+      <article class="container-info">
+
+        <div class="container-inside text-cont-1">
+          <h3>text-align</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur porro, illum magni earum cum, quidem
+            nesciunt hic numquam tempora, dolorem dolores reiciendis molestias harum. Repellat, odit quos? Inventore,
+            repellat accusamus.</p>
+        </div>
+
+        <div class="container-inside text-cont-2">
+          <h3>text-decoration</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur porro, illum magni earum cum, quidem
+            nesciunt hic numquam tempora, dolorem dolores reiciendis molestias harum. Repellat, odit quos? Inventore,
+            repellat accusamus.</p>
+        </div>
+
+        <div class="container-inside text-cont-3">
+          <h3>text-indent</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur porro, illum magni earum cum, quidem
+            nesciunt hic numquam tempora, dolorem dolores reiciendis molestias harum. Repellat, odit quos? Inventore,
+            repellat accusamus.</p>
+        </div>
+
+        <div class="container-inside text-cont-5 ">
+          <h3>letter-spacing</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur porro, illum magni earum cum, quidem
+            nesciunt hic numquam tempora, dolorem dolores reiciendis molestias harum. Repellat, odit quos? Inventore,
+            repellat accusamus.</p>
+        </div>
+
+        <div class="container-inside text-cont-6">
+          <h3>text-transform</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur porro, illum magni earum cum, quidem
+            nesciunt hic numquam tempora, dolorem dolores reiciendis molestias harum. Repellat, odit quos? Inventore,
+            repellat accusamus.</p>
+        </div>
+
+        <div class="container-inside text-cont-7">
+          <h3>white-space</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur porro, illum magni earum cum, quidem
+
+            nesciunt hic numquam tempora, dolorem dolores reiciendimolestias harum. Repellat, odit quos? Inventore,
+            repellat accusamus.
+          </p>
+        </div>
+
+        <div class="container-inside text-cont-8">
+          <h3>word-spacing</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, eius reiciendis. Voluptates tenetur quae a
+            dignissimos. Repellat aspernatur debitis nihil ex laborum consequatur ipsum maxime esse placeat iusto, error
+            corporis!
+          </p>
+        </div>
+
+        <div class="container-inside text-cont-9">
+          <h3>writing-mode</h3>
+          <p>
+            Lorem ipsum dolor, sit amet
+          </p>
+        </div>
+
+      </article>
+
+    </section>
+
+  </section>
+  <!-- ICONOS -->
+  <section id="icons">
+    <h2>Como cargar Iconos desde librerias externas</h2>
+    <a href="#top"><img src="up-arrow.png" alt=""></a>
+
+    <article class="notas">
+
+      <h3>Notas :</h3>
+
+      <ul>
+        <li> Link para ingresar a los Style Sheets icons de google <a href="https://fonts.google.com/icons"
+            target="_blank">fonts.google.com/icons</a></li>
+        <li>Link para ingresar a los Style Sheets icons de Bootstrap <a href=" https://icons.getbootstrap.com/"
+            target="_blank">icons.getbootstrap.com</a></li>
+        <li>Link para ingresar a los Style Sheets icons de Font Awesome <a href="https://fontawesome.com/"
+            target="_blank">fontawesome.com</a></li>
+
+      </ul>
+
+    </article>
+
+    <div class="nav-inside">
+      ooo
+    </div>
+
+    <section class="cont-info-desing">
+
+      <div class="container-info">
+        <div class="container-inside">
+
+          <h4 class="text-center" style="margin-bottom: 40px;"> Google Icons</h4>
+
+          <div style="display: flex;flex-flow: row nowrap; justify-content:space-around;">
+            <span class="material-icons md-36 ">
+              check_circle
+            </span>
+            <span class="material-icons md-36">
+              face
+            </span>
+            <span class="material-icons md-36">
+              favorite_border
+            </span>
+          </div>
+
+        </div>
+
+        <div class="container-inside">
+          <h4 class="text-center" style="margin-bottom: 40px;"> Bootstrap icons</h4>
+
+          <div style="display: flex;flex-flow: row nowrap; justify-content:space-around;">
+            <i class="bi bi-youtube" style="font-size: 36px;"></i>
+            <i class="bi bi-twitter" style="font-size: 36px;"></i>
+            <i class="bi bi-facebook" style="font-size: 36px;"></i>
+            <i class="bi bi-instagram" style="font-size: 36px;"></i>
+            <i class="bi bi-clock" style="font-size: 36px;"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </section>
+  <!-- PROPIEDADES DE BORDE -->
+  <section id="border-outlines">
+    <h2>Propiedades de bordes y outlines</h2>
+    <a href="#top"><img src="up-arrow.png" alt=""></a>
+
+    <article class="notas">
+      <ul>
+        <li>
+          Para lograr un elemento circular mediante los bordes se puede usar la propedad =
+          <code> border-radius: 50%;</code>, esto solo aplica para elemtos de caja "perfectos"
+        </li>
+        <li>
+          Para crear una elipse las medidas de la etiqueta <b>Border</b> se separan mediante un signo de division " /
+          " <code> border-radius: 1 rem / 3 rem  </code> </li>
+        <li>
+          La propiedad <code>outline</code> se aplica como un borde exterior al elemento, separado de lo que son los
+          elementos <b>Box model</b> (elementos de caja).
+        </li>
+        <li>
+          La propiedad <code>Outline</code> empuja los elementos alrededor de la caja hacia afuera, pero no el contenido
+          del
+          <b>Box Model</b>.
+        </li>
+        <li>
+          La propiedad <code>Outline-offset</code> se aplica para poder separar el elemento del Outline.
+        </li>
+      </ul>
+    </article>
+
+    <div class="nav-inside">
+      ooo
+    </div>
+
+    <section class="cont-info-desing">
+      <div class="container-info">
+
+        <div class="container-inside">
+          <h3 class="text-center" style="margin-bottom: 40px;"> Bordes y Outlines </h3>
+
+          <section id="border_box_container">
+            <div>
+              <div class="box_0 box_1">
+
+              </div>
+              <b>Borde Elipse</b>
+            </div>
+            <div>
+              <div class="box_0 box_2"></div>
+              <b>Elemento redondeado</b>
+            </div>
+
+            <div>
+              <div class="box_0 box_3"></div>
+              <b>Outlines</b>
+            </div>
+          </section>
+
+        </div>
+
+      </div>
+    </section>
+
+
+  </section>
+  <!-- PROPIEDADES DE BACKGROUND -->
+  <section id="backgrounds">
+    <h2>Propiedades de background</h2>
+    <a href="#top"><img src="up-arrow.png" alt=""></a>
+
+    <article class="notas">
+      <h3>Notas:</h3>
+
+      <ul>
+        <li> <code>background-color:</code> define el color de fondo del elemento</li>
+        <li><code> background-image:</code> define la imagen de fondo del elemento</li>
+        <li> <code> background-repeat:</code> define cómo se repite la imagen de fondo en el elemento.</li>
+        <li> <code> background-size: </code> define el tamaño de la imagen de fondo, primer valor Ancho, segundo Alto.
+          <br>
+          <code> - cover: </code> cambia el tamaño de la imagen de fondo para asegurarse de que permanezca completamente
+          visible. <br>
+          <code>- contain:</code> cambia el tamaño de la imagen de fondo para asegurarse de que el elemento esté
+          completamente cubierto.
+        </li>
+        <li>
+          <code> background-position:</code>
+          define la posición de la imagen de fondo, primer valor x, segundo y, si no se especifica un segundo valor éste
+          será
+          center
+          aparte de valores numéricos podemos indicar el posicionamiento con las palabras: center, top, bottom, left and
+          right
+        </li>
+        <li>
+          <code> background-clip: </code> define cuánto debe extenderse el fondo dentro del elemento. <br>
+          <code> ---- border-box </code> El fondo se extiende hasta el borde exterior de el contenedor . <br>
+          <code> ---- padding-box </code> El fondo no se muestra a través del borde (el fondo se extiende hasta el borde
+          exterior del padding). <br>
+          <code> ---- content-box </code> El fondo se dibuja desde donde inicia el contenido.
+        </li>
+
+        <li>
+          <code>bg-origin: </code>define el origen de la imagen de fondo.
+        </li>
+        <li>
+
+        </li>
+      </ul>
+    </article>
+
+    <div class="nav-inside">
+      ooo
+    </div>
+
+    <section class="cont-info-desing">
+      <div class="container-info">
+        <div class="container-inside">
+          <h3 class="text-center" style="margin-bottom: 40px;"> Propiedades de Background </h3>
+
+          <section id="bg_box_container">
+
+            <div>
+              <div class="bg_box_0 bg_color"></div>
+              <br>
+              <code>background-color</code>
+            </div>
+            <div>
+              <div class="bg_box_0 bg_image"></div>
+              <br>
+              <code>background-image</code>
+            </div>
+            <div>
+              <div class="bg_box_0 bg_size"></div>
+              <br>
+              <code>background-size</code>
+            </div>
+            <div>
+              <div class="bg_box_0 bg_repeat"></div>
+              <br>
+              <code>background-repeat</code>
+            </div>
+            <div>
+              <div class="bg_box_0 bg_position"></div>
+              <br>
+              <code>background-position</code>
+            </div>
+            <div>
+              <div class="bg_box_0 bg_clip"></div>
+              <br>
+              <code>background-clip</code>
+            </div>
+            <div>
+              <div class="bg_box_0 bg_origin"></div>
+              <br>
+              <code>background-origin</code>
+            </div>
+            <div>
+              <div class="bg_box_0 bg_attachment"></div>
+              <br>
+              <code>background-attachment</code>
+            </div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BACKGROUND MULTIPLE -->
+
+    <article class="notas">
+      <h3>Notas:</h3>
+      <ul>
+        <li>
+          Para añadir multiples fondos ( imagenes ) se puede hacer a travez de la etiqueta
+          <code>background : (primer fondo) , (segundo fondo), ...</code>
+        </li>
+        <li>
+          El orden en el que se organizaran será el siguiente: el primer parametro ingresado será la capa mas visible, y
+          el segundo parametro estará detras de esta.
+        </li>
+        <li>
+          Para realizar aplicar las distintas propiedades a dichos backgrounds se entendera que :
+          <code> background-attachment : ( primer elemento) , (segundo elemento) ; </code>
+        </li>
+    </article>
+
+    <section class="cont-info-desing" style="border-radius: 8px;">
+      <div class="container-info">
+        <div class="container-inside">
+          <h3 class="text-center" style="margin-bottom: 40px;"> Composicion de Background Mutiple </h3>
+
+          <section class="bg_box_multiple">
+            <div class="bg_box_1"></div>
+        </div>
+
+      </div>
+    </section>
+
+  </section>
+  <!-- ESTILOS Y PROPIEDADES DE IMG -->
+  <section id="img_properties">
+    <h2>Propiedades y estilos de imagenes</h2>
+    <a href="#top"><img src="up-arrow.png" alt=""></a>
+
+    <article class="notas">
+
+      <h3>Notas :</h3>
+
+      <ul>
+
+        <li> Para hacer que una img sea responsiva, como recomendacion en los resets del documento CCS es aconsejable
+          colocar <code> img { max-width : 100% ; height : auto; }</code> .</li>
+        <li>Los elementos IMG se comportan <b>Inline</b></li>
+        <li>Existen 2 prpiedades para ajustar el tamaño de una imagen en un contenedor con tamaño definido:
+          <br>
+          <code> object-fit ( none | contain | cover | fill (valor por defecto )</code>
+          <br>
+          <code> object-position : (ubicacion con palabras clave o medidas absolutas ) | sacle-down ( escala la imagen comparando los valores de none y contain, tomando el menor entre ambos ) </code>
+        </li>
+
+      </ul>
+
+    </article>
+
+    <div class="nav-inside">
+      ooo
+    </div>
+
+    <section class="cont-info-desing">
+
+      <div class="container-info">
+        <div class="container-inside">
+
+          <h4 class="text-center" style="margin-bottom: 40px;"> Imagenes responsivas</h4>
+
+          <img src="./img/Fondo_5.jpg" alt="Fondo 3">
+
+          <h4 class="text-center" style="width: 100%;"> Imagenes con dimensiones definidas</h4>
+
+          <section class=" card">
+            <img src="./img/Fondo_3.jpg" alt="">
+            <h5>IMG con medidas definidas</h5>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+
+  </section>
+  <!-- ESTILOS DE LISTAS -->
+  <section id="list_items">
+    <h2>Estilos para elementos tipo listas </h2>
+    <a href="#top"><img src="up-arrow.png" alt=""></a>
+
+    <article class="notas">
+
+      <h3>Notas :</h3>
+
+      <ul>
+        <li>Para cambiar el estilo de los bullets se usa la propiedad <code> list-style-type </code></li>
+        <li> Para utilizar imagenes en en los bullets se usa la propiedad <code>list-style-image: </code></li>
+        <li>Para que el bullet forme parte del contenido se usa la propiedad <code>list-style-position:</code> </li>
+      </ul>
+
+    </article>
+
+    <div class="nav-inside">
+      ooo
+    </div>
+
+    <section class="cont-info-desing">
+
+      <div class="container-info">
+        <div class="container-inside">
+
+
+          <h4 class="text-center" style="margin-bottom: 40px;"> Estilos de listas</h4>
+
+          <ul class="list_01">
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+          </ul>
+
+
+
+
+          <h4 class="text-center" style="margin-bottom: 40px;"> Texto de listados en columnas</h4>
+
+          <ol class="list_02">
+            <li>Mú de Aries</li>
+            <li>Aldebarán de Tauro</li>
+            <li>Saga & Kanon de Géminis</li>
+            <li>Death Mask de Cáncer</li>
+            <li>Aioria de Leo</li>
+            <li>Shaka de Virgo</li>
+            <li>Dohko de Libra</li>
+            <li>Milo de Escorpión</li>
+            <li>Aioros de Sagitario</li>
+            <li>Shura de Capricornio</li>
+            <li>Camus de Acuario</li>
+            <li>Afordita de Piscis</li>
+          </ol>
+
+
+        </div>
+    </section>
+
+
+  </section>
+  <!-- ESTILOS DE FORMULARIOS -->
+  <section id="forms">
+    <h2>Formularios</h2>
+    <a href="#top"><img src="up-arrow.png" alt=""></a>
+
+    <article class="notas">
+
+      <h3>Notas :</h3>
+
+      <ul>
+
+        <li></li>
+        <li></li>
+        <li></li>
+
+      </ul>
+
+    </article>
+
+    <div class="nav-inside">
+      ooo
+    </div>
+
+    <section class="cont-info-desing">
+
+      <div class="container-info">
+        <div class="container-inside">
+
+          <h4 class="text-center" style="margin-bottom: 40px;"> Formularios</h4>
+
+          <form class="contact-form" action="https://formsubmit.co/your@email.com" method="POST">
+
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              title="Nombre sólo acepta letras y espacios en blanco" required>
+
+            <input type="email" name="correo" placeholder="Escribe tu correo"
+              pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formato de correo inválido" required>
+
+            <textarea name="comentarios" placeholder="Escribe tus comentarios" cols="30" rows="10" required></textarea>
+
+            <input type="submit">
+          </form>
+
+
+        </div>
+      </div>
+    </section>
+
+
+  </section>
+  <!-- EJERSICIOS SUELTOS -->
+  <section id="ejercicios">
+    <br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <h2>Ejercicios de pratica sueltos</h2>
+    <section id="paralax">
+
+      <h3 style="text-align: center;">Ejercicio 1</h3>
+      <div id="nav-bar">
+
+        <a href="#container-1">Seccion 1</a>
+        <a href="#container-2 ">Seccion 2</a>
+        <a href="#container-3">Seccion 3</a>
+
+      </div>
+
+      <div class="secciones">
+
+        <article class="paralax" id="container-1">
+          <h1 id="seccion-1">Sección 1</h1>
+        </article>
+
+        <article class="paralax" id="container-2">
+          <h1 id="seccion-2">Sección 2</h1>
+        </article>
+
+        <article class="paralax" id="container-3">
+          <h1 id="seccion-3">Sección 3</h1>
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="flexbox-exer">
+
+      <article class="exer-container-1">
+        <h1>Bienvenid@s</h1>
+      </article>
+
+      <article class="exer-container-2">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt dicta laborum illo voluptatum quam sed
+          quaerat esse consectetur, numquam eligendi optio, neque dolor magni beatae placeat vitae. Eaque, tenetur
+          ipsum?
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum perferendis tempora eos cumque dolor, soluta
+          voluptatem molestiae dolorum fugit dicta molestias laboriosam odit aspernatur pariatur omnis amet sit eaque
+          exercitationem.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum perferendis tempora eos cumque dolor, soluta
+          voluptatem molestiae dolorum fugit dicta molestias laboriosam odit aspernatur pariatur omnis amet sit eaque
+          exercitationem.
+        </p>
+      </article>
+
+      <article class="exer-container-3">
+        <ul>
+          <li><a href="">Enlace 1</a></li>
+          <li><a href="">Enlace 2</a></li>
+          <li><a href="">Enlace 3</a></li>
+        </ul>
+      </article>
+
+    </section>
+
+  </section>
+
+</body>
+
+</html>

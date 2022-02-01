@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../Css/effect_movements.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="grid_body">
+
+
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Volver al indice principal </a></li>
+          <li><a href="box-model.html">Modelo de caja </a></li>
+          <li><a href="position.html">Posicionamiento </a></li>
+          <li><a href="position-examples.html">Ejersicios de Posicionamiento </a> </li>
+          <li><a href="Flexbox.html"> Flexbox</a>
+          <li><a href="ejersicios-flexbox.html"> Ejersicios flexbox</a></li>
+          <li><a href="Bootstrap.html">Bootstrap</a></li>
+          <li><a href="grid.html">Css grid</a></li>
+          <li><a href="units.html">Unidades de medida</a></li>
+          <li><a href="effects_movements.html">Efectos y movimiento</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+
+    <main id="main_content_box">
+
+      <!-- INDICE -->
+
+      <nav id="mc_index" class="mc_box mc_box_model_ind">
+        <h3>Indice</h3>
+        <ul>
+          <li><a href="#box_shadow">Shadows</a></li>
+          <li><a href="#dropshadow_filter">Filtro Drop shadow</a></li>
+          <li><a href="#gradients">Degradados</a></li>
+          <li><a href="#gradients-patterns">Patrones de degradados</a></li>
+          <li><a href="#filters">Filtros para imagenes</a></li>
+          <li><a href="#multiple_filters">Filtros multiples para imagenes</a></li>
+          <li><a href="#backdrop-filter">Filtros para fondos </a></li>
+          <li><a href="#blend_mode">Estilos de mezcla </a></li>
+          <li><a href="#bg-blend-mode">Estilos de mezcla de fondos </a></li>
+          <li><a href="#mask">Mascaras de recorte </a></li>
+          <li><a href="#text-img-shapes">Formas entre texto e imagenes </a></li>
+          <li><a href="#scroll-effects">Efectos de Scroll </a></li>
+          <li><a href="#scroll-snap">Scroll Snap </a></li>
+          <li><a href="#transition-css">Transiciones en css </a></li>
+          <li><a href="#transform-2d">Transformaciones en 2D </a></li>
+          <li><a href="#transform-3d">Transformaciones en 3D </a></li>
+          <li><a href="#flip-card">Flip Card </a></li>
+          <li><a href="#animation-css">Animaciones </a></li>
+          <li><a href="#animation_2">Menu Hamburguesa</a></li>
+          <li><a href="#modal-window">Ventana Modal</a></li>
+          <li><a href="#starwars-intro">Starwars-intro</a></li>
+
+        </ul>
+      </nav>
+
+      <!-- CONTENIDO -->
+
+      <section class="container">
+
+        <!-- BOX SHADOW -->
+
+        <article id="box_shadow" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Sombras</h3>
+            <br>
+            <ul>
+              <li>La propiedad <b>Box Shadow</b> se compone
+                :
+                <code>box-shadow : valor-X | valor-Y | blur-radius | spread-blur | color | inset/outset</code>
+              </li>
+              <li>Si no es especifica el color en la propiedad, este tomara como valor hereddo el color de
+                texto
+                del
+                elemento.</li>
+              <li>Acepta valores negativos</li>
+              <li>Las sombra por defecto son <b>outset</b> sin embargo este valor no se debe de escribir
+                si ya
+                esta
+                estblecido ya que tomara como que esta sombra no es valdia.</li>
+              <li>La propiedad <code>text-shadow</code> acepta como parametros :
+                <code>val-X | val-Y | blur | color</code>.
+              </li>
+              <li>Para agregar sombras multiples solo hay q separar los valores de cada sombra con una
+                <b>","</b>.
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="ds_flex_row gap_1 padding_1 grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy box_shadow"></div>
+              <code class="text_center"> Box-shadow</code>
+            </div>
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy multiple_shadow"></div>
+              <code class="text_center"> multiple-shadow</code>
+            </div>
+
+            <div class="ds_flex_column ds_center gap_1">
+              <span class="text_center text_shadow"> Sombra de texto</span>
+              <code class="text_center"> Box-shadow</code>
+            </div>
+
+            <div class="ds_flex_column ds_center gap_1">
+              <span class="text_center multiple_text_shadow"> Sombra de texto</span>
+              <code class="text_center"> Box-shadow-multiple</code>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- DROP SHADOW ( FILTER ) -->
+
+        <article id="dropshadow_filter" class="mc_box_model">
+          <div class="notes">
+            <h3>Drop shadow Filter</h3>
+            <ul>
+              <li>El filtro <code>filter: drop-shadow</code> sirve para aplicar sombras a objetos <b> png
+                  ( con
+                  fondo
+                  transparente ) </b> .</li>
+            </ul>
+          </div>
+
+          <div class="ds_flex_column gap_1 padding_1">
+
+            <div class="box_dummy filter">
+              <img src="./img/arbol.png" alt="">
+            </div>
+            <code class="text_center"> Filter</code>
+
+          </div>
+        </article>
+
+        <!-- DEGRADADOS -->
+
+        <article id="gradients" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Degradados</h3>
+            <br>
+            <ul>
+              <li>La propiedad <code>linear-gradient:</code> se compone de : <code>grados | color</code> y
+                todos
+                los
+                aprametros van <b> separados por una ",".</b> </li>
+              <li>El punto " 0 " de los grados esta ubicado en el <b>centro / inferior</b> del objeto al
+                que se
+                le
+                aplica. </li>
+              <li>La unidad en la que se establcen los grados es <b>"deg"</b>.</li>
+              <li>Se pueden usar palabras clave <code>to right| left | top | bottom</code> y se puede
+                hacer
+                combinaciones
+                entre ellas : <code>to bottom left</code></li>
+              <li>Se puede usar los procentajes para ubicar la proporcion que podria abarcar el color ejmp
+                : <b>
+                  red 0%
+                  15% , green 16% 80%, white 81% 100%</b></li>
+            </ul>
+          </div>
+
+
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy gradient_linear"></div>
+              <code class="text_center"> linear-gradient</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy gradient_radial"></div>
+              <code class="text_center"> radial-gradients</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy gradient_conico"></div>
+              <code class="text_center"> conic-radients</code>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- PATRON DE DEGRADAOS  -->
+        <article id="gradients-patterns" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Patron de degrados</h3>
+            <br>
+            <ul>
+              <li>La propiedad para repetir patrones de degradados es:
+                <code>background-image: repeating- | linear / radial / conic|- gradient</code>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy repeat_gradient_linear"></div>
+              <code class="text_center"> repeating-linear-gradient</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy repeat_gradient_radial"></div>
+              <code class="text_center"> linear-gradient</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy repeat_gradient_conic"></div>
+              <code class="text_center"> linear-gradient</code>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- FILTROS -->
+
+        <article id="filters" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Filtros de imagenes</h3>
+            <br>
+            <ul>
+              <li>Para aplicar las propiedades de effectos, se utiliza la palabra reservada <b>filter</b>.
+              </li>
+              <li>El filtro de <b>Brightness (brillo)</b> va dese 0 ( sin luminocidad ) a 1 ( 100%
+                iluminado ).
+                Un valor
+                superior a (1) crearia efecto de sobre exposicion.</li>
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card ef_blur">
+                <img src="./img/Fondo_2.jpg" alt="">
+              </div>
+              <code class="text_center"> filter : blur (0.1 rem)</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card ef_brightness">
+                <img src="./img/Fondo_2.jpg" alt="">
+              </div>
+              <code class="text_center"> filter: brightness(0.5)</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card ef_contrast">
+                <img src="./img/Fondo_2.jpg" alt="">
+              </div>
+              <code class="text_center"> filter: contrast(0.3);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card ef_grayscale ">
+                <img src="./img/Fondo_2.jpg" alt="">
+              </div>
+              <code class="text_center"> filter: grayscale(0.8);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card ef_sepia ">
+                <img src="./img/Fondo_2.jpg" alt="">
+              </div>
+              <code class="text_center">filter: sepia(0.7);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card ef_hue-rotate ">
+                <img src="./img/Fondo_2.jpg" alt="">
+              </div>
+              <code class="text_center">filter: hue-rotate(180deg);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card ef_invert ">
+                <img src="./img/Fondo_2.jpg" alt="">
+              </div>
+              <code class="text_center">filter: invert(1);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card ef_opacity">
+                <img src="./img/Fondo_2.jpg" alt="">
+              </div>
+              <code class="text_center">filter: opacity(0.3);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card ef_saturate">
+                <img src="./img/Fondo_2.jpg" alt="">
+              </div>
+              <code class="text_center">filter: saturate(5);</code>
+            </div>
+
+
+
+          </div>
+        </article>
+
+        <!-- FILTROS MULTIPLES  -->
+
+        <article id="multiple_filters" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Filtros multiples de imagenes</h3>
+            <br>
+            <ul>
+              <li>Para aplicar filtos multiples a una misma imagen, se tienen que separar dichos filtro (
+                o
+                funciones)
+                por
+                un
+                espacio en blanco " ".</li>
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card filters_multiple">
+                <img src="./img/Fondo_2.jpg" alt="">
+              </div>
+              <code class="text_center"> filter: blur(0.1rem) invert(1) saturate(4) hue-rotate(180deg);</code>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- FILTROS A FONDOS -->
+
+        <article id="backdrop-filter" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Filtros a fondos</h3>
+
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1 position_rel">
+              <img class="box_dummy card" src="./img/Fondo_5.jpg" alt="">
+              <div class="back_drop">
+                <span>Title for a single card</span>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- BLEND MODE -->
+
+        <article id="blend_mode" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+
+            <h3>Estilos de mezcla</h3>
+            <br>
+            <ul>
+              <li>La porpiedad para realizar las mezclas entre 2 imagenes superpuestas es
+                <code> mix-blend-mode: </code>
+              </li>
+              <li>Dicha propiedad se tiene q aplcar a las 2 imagenes q se van a ver afectadas ( o a todas
+                las img
+                dentro
+                de contenedor padre ) </li>
+              <li> Cada imagen va a reaccionar de forma distinta ya que el algoridmo que realiza estos
+                calculos
+                lo hace
+                sobra cada imagen por separado </li>
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card position_rel ">
+                <img class="blend_mode position_abs" src="./img/Fondo_5.jpg" alt="">
+                <img class="blend_mode" src="./img/Fondo_3.jpg" alt="">
+              </div>
+              <code class="text_center">mix-blend-mode: exclusion;</code>
+            </div>
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card position_rel ">
+                <img class="blend_mode_2 position_abs" src="./img/Fondo_5.jpg" alt="">
+                <img class="blend_mode_2" src="./img/Fondo_3.jpg" alt="">
+              </div>
+              <code class="text_center">mix-blend-mode: multiply;</code>
+            </div>
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card position_rel ">
+                <img class="blend_mode_3 position_abs" src="./img/Fondo_5.jpg" alt="">
+                <img class="blend_mode_3" src="./img/Fondo_3.jpg" alt="">
+              </div>
+              <code class="text_center"> mix-blend-mode: color-burn;</code>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- BACKGROUND BLEND MODE -->
+
+        <article id="bg-blend-mode" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Estilos de mezcla de fondos</h3>
+            <br>
+            <ul>
+              <li>La porpiedad para realizar las mezclas entre 2 fondos superpuestos es
+                <code> background-blend-mode: </code>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card_blend bg_blend_1">
+              </div>
+              <code class="text_center"> background-blend-mode: multiply;</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card_blend bg_blend_2">
+              </div>
+              <code class="text_center"> background-blend-mode: screen;</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card_blend bg_blend_3">
+              </div>
+              <code class="text_center"> background-blend-mode: soft-light;</code>
+            </div>
+
+
+          </div>
+        </article>
+
+        <!-- MASK -->
+
+        <article id="mask" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Mascaras de recorte</h3>
+            <br>
+            <ul>
+              <li>Para realizar una mascara de recorte circular se usa la propiedad
+                <code> clip-path: circle (100px | 100px at top | 100px at top right | 100px at 60% 20%) </code>
+              </li>
+              <li>Para mascaras en forma rectangular se usa la propiedad
+                <code>clip-path: inset (hay que establecer un valor incial)</code>
+              </li>
+              <li>Para mascaras de forma irregular ( por nodos ) se usa la propiedad
+                <code>clip-path: polygon(0 0, 100% 0, 50% 100%);</code>
+              </li>
+              <li>Pagina de referencias para poligonos
+                irregulares : <a href="https://bennettfeely.com/clippy/" target="_blank">bennettfeely.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card clip_path">
+                <img src="./img/Fondo_3.jpg" alt="">
+              </div>
+              <code class="text_center">clip-path: circle();</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card clip_path_inset">
+                <img style="object-fit: contain;" src="./img/Fondo_5.jpg" alt="">
+              </div>
+              <code class="text_center">clip-path: inset(3rem round 1rem);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card clip_path_polygon">
+                <img style="object-fit: contain;" src="./img/Fondo_2.jpg" alt="">
+              </div>
+              <code class="text_center">clip-path: polygon(custom);</code>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- TEXT-IMG SHAPES -->
+
+        <article id="text-img-shapes" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Forma entre texto e imagenes</h3>
+            <br>
+            <ul>
+              <li>Para aplicar el efecto visual de que el texto pueda seguir la forma de un objeto, se
+                debe
+                aplicar la
+                propiedad <code>shape-outside:</code></li>
+              <li>Esta propiedad acepta los mismo parametros que la propiedad <b>Clip-path</b> (circle ,
+                polygon,elipse
+                ).
+              </li>
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="shapes_cont">
+                <img class="card_shape float_left shape_1" src="./img/Fondo_1.jpg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id magnam quo adipisci
+                  nostrum modi
+                  fugit
+                  tenetur accusamus, maxime praesentium dolores cumque error eaque, quod dicta, enim
+                  ipsam at
+                  sit. Aut!
+                </p>
+                <p>Ab totam sed eaque, vel hic obcaecati accusantium ex? Itaque tempore vitae odit at
+                  quisquam
+                  corporis
+                  harum modi, sunt consequatur ducimus, quasi ab repellendus reiciendis nihil. Maxime
+                  ipsum
+                  excepturi
+                  odio.</p>
+                <p>Sint neque dignissimos similique et officiis? Reprehenderit doloribus magnam odio
+                  dicta
+                  repellat
+                  quaerat repellendus fugiat placeat nobis modi, laboriosam veritatis quo, illo ipsum
+                  porro
+                  officiis
+                  ipsam
+                  repudiandae quibusdam? At, quam!</p>
+                <p>Nemo perferendis in aut amet nulla. Dignissimos placeat animi eius illum et
+                  perspiciatis,
+                  quia modi,
+                  beatae itaque, veritatis quidem! Eum aperiam similique quos aliquid ad. Similique at
+                  sint
+                  facilis
+                  harum.
+                </p>
+                <img class="card_shape float_right shape_2" src="./img/Fondo_1.jpg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id magnam quo adipisci
+                  nostrum modi
+                  fugit
+                  tenetur accusamus, maxime praesentium dolores cumque error eaque, quod dicta, enim
+                  ipsam at
+                  sit. Aut!
+                </p>
+                <p>Ab totam sed eaque, vel hic obcaecati accusantium ex? Itaque tempore vitae odit at
+                  quisquam
+                  corporis
+                  harum modi, sunt consequatur ducimus, quasi ab repellendus reiciendis nihil. Maxime
+                  ipsum
+                  excepturi
+                  odio.</p>
+                <p>Sint neque dignissimos similique et officiis? Reprehenderit doloribus magnam odio
+                  dicta
+                  repellat
+                  quaerat repellendus fugiat placeat nobis modi, laboriosam veritatis quo, illo ipsum
+                  porro
+                  officiis
+                  ipsam
+                  repudiandae quibusdam? At, quam!</p>
+                <p>Nemo perferendis in aut amet nulla. Dignissimos placeat animi eius illum et
+                  perspiciatis,
+                  quia modi,
+                  beatae itaque, veritatis quidem! Eum aperiam similique quos aliquid ad. Similique at
+                  sint
+                  facilis
+                  harum.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+        </article>
+
+        <!-- SCROLL BEHAVIOR -->
+        <article id="scroll-effects" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Efectos de scroll de pagina</h3>
+            <br>
+            <ul>
+              <li>Al realizar paginas con secciones internas,se puede usar el atributo
+                <code> scroll-margin-top|right|left|bottom </code> para establecer un margen desde el
+                origen de
+                su
+                contenedor.
+              </li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1 padding_1">
+              <div class="header text_center">
+                <h2>One Scroll Page ( <small>sitio 1 page</small>)</h2>
+                <nav>
+                  <a href="#section-1">Sección 1</a>
+                  <a href="#section-2">Sección 2</a>
+                  <a href="#section-3">Sección 3</a>
+                  <a href="#section-4">Sección 4</a>
+                  <a href="#section-5">Sección 5</a>
+                </nav>
+              </div>
+              <div>
+
+                <section id="section-1" class="slide">
+                  <h3>Seccion Nº 1</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio libero rem nihil
+                    magni
+                    assumenda,
+                    molestiae in, ratione error saepe reiciendis delectus distinctio quas non eos.
+                    Adipisci
+                    quod sequi
+                    soluta et?</p>
+                  <img src="./img/fondo_3.jpg" alt="fondo">
+                </section>
+                <section id="section-2" class="slide">
+                  <h3>Seccion Nº 2</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio libero rem nihil
+                    magni
+                    assumenda,
+                    molestiae in, ratione error saepe reiciendis delectus distinctio quas non eos.
+                    Adipisci
+                    quod sequi
+                    soluta et?</p>
+                  <img src="./img/fondo_3.jpg" alt="fondo">
+                </section>
+                <section id="section-3" class="slide">
+                  <h3>Seccion Nº 3</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio libero rem nihil
+                    magni
+                    assumenda,
+                    molestiae in, ratione error saepe reiciendis delectus distinctio quas non eos.
+                    Adipisci
+                    quod sequi
+                    soluta et?</p>
+                  <img src="./img/fondo_3.jpg" alt="fondo">
+                </section>
+                <section id="section-4" class="slide">
+                  <h3>Seccion Nº 4</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio libero rem nihil
+                    magni
+                    assumenda,
+                    molestiae in, ratione error saepe reiciendis delectus distinctio quas non eos.
+                    Adipisci
+                    quod sequi
+                    soluta et?</p>
+                  <img src="./img/fondo_3.jpg" alt="fondo">
+                </section>
+                <section id="section-5" class="slide">
+                  <h3>Seccion Nº 5</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio libero rem nihil
+                    magni
+                    assumenda,
+                    molestiae in, ratione error saepe reiciendis delectus distinctio quas non eos.
+                    Adipisci
+                    quod sequi
+                    soluta et?</p>
+                  <img src="./img/fondo_3.jpg" alt="fondo">
+                </section>
+              </div>
+
+
+            </div>
+
+          </div>
+        </article>
+
+        <!-- SCROLL SNAP -->
+
+        <article id="scroll-snap" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Scroll Snap</h3>
+            <br>
+            <ul>
+              <li>Para realizar este efecto, obligatoriamente el elemento contenedor tiene que tener una
+                altura
+                definida.
+              </li>
+              <li>El elemento contenedor tiene que tener activa la propiedad
+                <code> overflow: scroll </code>.
+              </li>
+              <li>La propiedad tiene como nombre
+                <code> scroll-snap-type: <b>CONTROL</b> [x (inline) | y (block) | both] - <b>COMPORTAMIENTO</b> [mandatory | proximity] </code>
+                y esta se aplica al contenedor padre.
+              </li>
+
+              <li>Todos los contenedores hijos tienes que tener activa la propiedad
+                <code> scroll-snap-align : start | center | end ;</code> la cual define el punto de
+                referencia
+                en el
+                cual
+                se va a realizar el scroll.
+              </li>
+            </ul>
+          </div>
+
+          <h2 class="text_center grid_ext_column">Haz scroll en el contenedor</h2>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+            <div class="main_slides ">
+
+              <section class="slide-snap ">
+                <article class="slide-snap-container">
+
+                  <section class="carrousel">
+
+                    <div class="carrousel-container">
+
+                      <article class="carrousel-slide">
+                        <div class="carrousel-slide-content">
+                          <h3 class="gradient_text">Drag Right / Down</h3>
+                        </div>
+                      </article>
+
+                      <article class="carrousel-slide">
+                        <div class="carrousel-slide-content">
+                          <h3>Slide 2</h3>
+                        </div>
+                      </article>
+
+                      <article class="carrousel-slide">
+                        <div class="carrousel-slide-content">
+                          <h3>Slide 3</h3>
+                        </div>
+                      </article>
+
+                      <article class="carrousel-slide">
+                        <div class="carrousel-slide-content">
+                          <h3>Slide 4</h3>
+                        </div>
+                      </article>
+
+                      <article class="carrousel-slide">
+                        <div class="carrousel-slide-content">
+                          <h3>Slide 5</h3>
+                        </div>
+                      </article>
+
+                    </div>
+
+                  </section>
+                </article>
+              </section>
+
+              <section class="slide-snap">
+                <article class="slide-snap-container">
+                  <h2>Slide 2</h2>
+                </article>
+              </section>
+
+              <section class="slide-snap">
+                <article class="slide-snap-container">
+                  <h2>Slide 3</h2>
+                </article>
+              </section>
+
+              <section class="slide-snap">
+                <article class="slide-snap-container">
+                  <h2>Slide 4</h2>
+                </article>
+              </section>
+
+              <section class="slide-snap">
+                <article class="slide-snap-container">
+                  <h2>Slide 5</h2>
+                </article>
+              </section>
+
+            </div>
+
+          </div>
+        </article>
+
+        <!-- MOTION CSS -->
+
+        <article id="transition-css" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Transiciones en css</h3>
+            <br>
+            <ul>
+              <li>La propiedad <code> trantision</code> es el shorthand para:
+
+                <ul>
+                  <br>
+                  <li><code> transition-property ( propiedad a la que se le aplicaria transicion ) </code>
+                  </li>
+                  <li><code> transition-duration ( duracion de la transicion ) </code></li>
+                  <li><code> transition-timing-funtion ( velocidad : ease | ease-in , etc ) </code>
+                  </li>
+                  <li><code> transition-delay (retraso previo al incio de la transicion ) </code></li>
+                </ul>
+              </li>
+              <li>Para plicar transiciones a distintas propiedades se puede hacer de 2 modos :
+                <ul>
+                  <br>
+                  <li>Separar cada propiedad por una " , " coma, en la propiedad
+                    <b>transition-property</b> //
+                    <code>transition-property: background-color, border, border-radius; </code>
+                  </li>
+                  <li>Utilizando la palabra reservada <b>"all"</b> en el shorthand.</li>
+                </ul>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_transition ds_flex_column ds_center">
+                <h3> Hoover me</h3>
+              </div>
+              <code> transition: background-color 350ms ease-in-out 100ms;</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_transition_img">
+                <img src="./img/Fondo_3.jpg" alt="">
+              </div>
+              <code class="text_center">transition: all 550ms ease-in-out 50ms;</code>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- TRANSFORM 2D CSS -->
+
+        <article id="transform-2d" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Transformaciones 2D</h3>
+            <br>
+            <ul>
+              <li>Las transformaciones en CSS se dividen en <b>Transformaciones 2D</b> y
+                <b>Transformaciones
+                  3D</b> y se
+                llaman con la propiedad <code>transform</code>
+              </li>
+              <li>Acepta cualquier valor de unidad, y valores negativos</li>
+              <li>Las transformaciones de movimiento 2D son
+                <code> transform : translate(x | y) | scale(x | y) | rotate(x | y) | skew(x | y) | matrix (</code>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_translate animate">
+                <img src="./img/Fondo_1.jpg" alt="">
+              </div>
+              <code class="text_center"> transform: translate(-5%, -5%);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_scale animate">
+                <img src="./img/Fondo_1.jpg" alt="">
+              </div>
+              <code class="text_center"> transform: scale(1.2);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_scale_1 animate">
+                <img src="./img/Fondo_1.jpg" alt="">
+              </div>
+              <code class="text_center"> transform: scaleX(-1); ( efecto flip )</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_rotate animate">
+                <img src="./img/Fondo_1.jpg" alt="">
+              </div>
+              <code class="text_center"> transform: rotateZ(180deg);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_skew animate">
+                <img src="./img/Fondo_1.jpg" alt="">
+              </div>
+              <code class="text_center"> transform: skewX(-20deg);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_multiple animate">
+                <img src="./img/Fondo_1.jpg" alt="">
+              </div>
+              <code class="text_center"> transform: scale(1.2) scaleX(-1);</code>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- TRANSFORM 3D -->
+
+        <article id="transform-3d" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Transformaciones 3D</h3>
+            <br>
+            <ul>
+              <li>Para hacer uso de las transformaciones en 3d se tiene q activar la propiedad
+                <b>Perspective</b>
+                la
+                cual
+                se puede aplicar al contenedor padre, o declarar dicha funcion como prefijo antes de
+                realizar la
+                transformacion ejm:
+                <code> transform: perspective(valor de profundidad de campo) translateZ(20%); </code>
+              </li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1 perspective">
+              <div class="box_dummy card card_3d_trans animated_3d ">
+                <img src="./img/Fondo_5.jpg " alt="">
+              </div>
+              <code class="text_center"> transform: translate3d(-50px, -50px, -500px);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1 perspective">
+              <div class="box_dummy card card_3d_scale animated_3d ">
+                <img src="./img/Fondo_5.jpg " alt="">
+              </div>
+              <code class="text_center"> transform: scale3d(2.5);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1 perspective">
+              <div class="box_dummy card card_3d_rotate animated_3d ">
+                <img src="./img/Fondo_5.jpg " alt="">
+              </div>
+              <code class="text_center"> transform: rotate3d(1, -4, 0, 30deg);</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1 perspective">
+              <div class="box_dummy card card_3d_multiple animated_3d ">
+                <img src="./img/Fondo_5.jpg " alt="">
+              </div>
+              <code class="text_center"> transform: rotate3d(0, -8, 0, 60deg)</code>
+            </div>
+            <div class="ds_flex_column ds_center gap_1 perspective ">
+              <div class="box_dummy card card_3d_origin ">
+                <img src="./img/Fondo_5.jpg " alt="">
+              </div>
+              <code class="text_center">transform-origin: bottom left;</code>
+            </div>
+
+
+          </div>
+        </article>
+
+        <!-- FLIP CARDS (EJERCICIO 1) -->
+
+        <article id="flip-card" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Ejersicios de transformacion - Flip Card</h3>
+            <br>
+            <ul>
+
+              <li>
+                Para poder realizar el effecto visual de un objeto con 2 caras, se tiene que aplicar la
+                propiedad al
+                contenedor padre de los 2 elementos a interactuar:
+                <code> transform-style: preserve-3d; </code>
+                <b>(esta
+                  propiedad indica al navegador que ese contenedor se tratará como un objeto en 3
+                  dimensiones</b>.
+                Agregado a la propiedad <code>perspective: ();</code>
+              </li>
+
+              <li>
+                Al los contenedores hijos se tiene que aplicar la propiedad :
+                <code>backface-visibility: hidden </code> <b>( propiedad que indica, que en un ambiente
+                  3d , la
+                  cara
+                  posterior del elemento será invisible )</b>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+
+
+            <div class="ds_flex_column ds_center gap_1">
+
+              <div class=" card_flip_container">
+
+                <div class="card_flip card_front">
+                  <img src="./img/Fondo_5.jpg" alt="">
+                </div>
+                <div class="card_flip card_back">
+                  <img src="./img/Fondo_4.jpg" alt="">
+                </div>
+
+              </div>
+              <code class="text_center"> Flip Card 1</code>
+            </div>
+
+            <div class="ds_flex_column ds_center gap_1">
+
+              <div class=" card_flip_container_2">
+
+                <div class="card_flip card_front">
+                  <img src="./img/Fondo_5.jpg" alt="">
+                </div>
+                <div class="card_flip card_back">
+                  <img src="./img/Fondo_4.jpg" alt="">
+                </div>
+
+              </div>
+              <code class="text_center"> Flip Card 2</code>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- ANIMATIONS -->
+
+        <article id="animation-css" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Animaciones</h3>
+            <br>
+            <ul>
+              <li>Para realizar una animacion se utiliza la propiedad <code>animation</code> cuyos parametros pueden
+                ser:
+                <ul>
+                  <br>
+                  <li><b>Name</b> : Nombre asignado de la animacion</li>
+                  <li><b>duration</b> : Duracion. </li>
+                  <li><b>timing-function</b> : curva bezier de movimiento.</li>
+                  <li><b>delay</b> : Retraso. </li>
+                  <li><b>iteration-count</b> : Numero de repeticione. </li>
+                  <li><b>direction</b> : Orden de ejecucion de la animacion. </li>
+                  <li><b>fill-mode</b> : Decide si conserva los cambios de propiedades al final de la animacion.</li>
+                  <li><b>play-state</b> : Estado de la animacion pentre pausado y running.</li>
+                  <br>
+                </ul>
+              </li>
+              <li>Los fotogramas se invocan con la propiedad <code> @keyframes (nombre de la animacion)</code></li>
+              <li> La Propiedad <code> @keyframe </code> obligatoriamente tiene que tener 2 fotogramas incluidos
+                <code> from () {fotograma inicial} || to () {fotograma final}</code>
+              </li>
+              <li>
+                Para incluir multiples fotogramas, los <code>@keyframe</code> se entienden como un valor de porcentaje
+                (%) dentro de una linia de tiempo , ejm:
+                <code> 0% { filter: 1} 50% | { filter : 2} | 100% {Filter : 3}</code>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_animation card_animation_1">
+                <img src="./img/Fondo_5.jpg" alt="">
+              </div>
+              <code class="text_center"> Animacion basica</code>
+            </div>
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_animation card_animation_2">
+                <img src="./img/Fondo_5.jpg" alt="">
+              </div>
+              <code class="text_center"> Fotogramas multiples </code>
+            </div>
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_animation card_animation_3">
+                <img src="./img/Fondo_5.jpg" alt="">
+              </div>
+              <code class="text_center"> Animaciones multiples </code>
+            </div>
+
+            <!-- Fade effect -->
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_animation card_fade_in">
+                <img src="./img/Fondo_5.jpg" alt="">
+              </div>
+              <code class="text_center"> Fade-in </code>
+            </div>
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_animation card_fade_out">
+                <img src="./img/Fondo_5.jpg" alt="">
+              </div>
+              <code class="text_center"> Fade-out </code>
+            </div>
+
+            <!-- Shake Effect -->
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_animation card_shake">
+                <img src="./img/Fondo_5.jpg" alt="">
+              </div>
+              <code class="text_center"> Shake </code>
+            </div>
+
+            <!-- Pulse Effect -->
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_animation card_pulse">
+                <img src="./img/Fondo_5.jpg" alt="">
+              </div>
+              <code class="text_center"> Pulse </code>
+            </div>
+
+            <!-- Loader Effect -->
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="spiner"></div>
+              <code class="text_center"> loader </code>
+            </div>
+
+            <!-- Under bar button Effect -->
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="btn-container">
+                <button class="btn btn-animado to-left">Aniamacion izquierda</button>
+                <button class="btn btn-animado to-center">Animacion centro</button>
+                <button class="btn btn-animado to-right">Animacion derecha</button>
+              </div>
+              <code>Botones Animados</code>
+            </div>
+
+            <!-- Gradien fill Effect -->
+
+            <div class="ds_flex_column ds_center gap_1">
+              <div class="box_dummy card card_animation_gradient">
+                <h3 class="text_center">Hover me</h3>
+              </div>
+              <code class="text_center"> Fondo gradiente Animado </code>
+            </div>
+
+            <!-- Tab Slide Effect -->
+
+            <div class="ds_flex_column ds_center gap_1 width_nav">
+
+              <nav class="tabs-menu ds_flex_row ds_center ">
+
+                <input type="radio" id="tab-1" name="tabs">
+                <label for="tab-1">Seccion 1</label>
+
+                <input type="radio" id="tab-2" name="tabs">
+                <label for="tab-2">Seccion 2</label>
+
+                <input type="radio" id="tab-3" name="tabs">
+                <label for="tab-3">Seccion 3</label>
+
+                <input type="radio" id="tab-4" name="tabs">
+                <label for="tab-4">Seccion 4</label>
+
+
+                <div class="tab-bg-hover"></div>
+              </nav>
+              <code class="text_center"> Effecto Tab  </code>
+            </div>
+
+          </div>
+        </article>
+
+        <article id="animation_2" class="mc_box_model">
+
+          <div class="notes grid_ext_column ds_center">
+            <h3>Menu Hamburger</h3>
+
+            <ul>
+              <li>
+                Para poder realizar este elemento de menu desplegable, se tienen que cumplir ciertas reglas
+                <ul>
+                  <br>
+                  <li>
+                    Tanto la etiqueta <code> input "checkbox"</code> como el icono a interactuar, como el contenedor de
+                    los elementos del menu, tienen que ser hermanos directos.
+                  </li>
+                  <li>
+                    El orden para estblecer estos elementos es : <b>Input checkbox | icono | contenedor </b>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <br>
+          </div>
+
+          <div class="grid_ext_column hb-menu-container">
+
+            <img class="off-canvas-img" src="./img/Fondo_2.jpg" alt="">
+            <input type="checkbox" class="off-canvas-btn">
+            <label class="burger-lines"></label>
+            <nav class="off-canvas-menu">
+              <div class="off-canvas-menu-container">
+                <a href="#" class="canvas-off-link">
+                  <p>Seccion 1</p>
+                </a>
+                <a href="#" class="canvas-off-link">
+                  <p>Seccion 2</p>
+                </a>
+                <a href="#" class="canvas-off-link">
+                  <p>Seccion 3</p>
+                </a>
+                <a href="#" class="canvas-off-link">
+                  <p>Seccion 4</p>
+                </a>
+                <a href="#" class="canvas-off-link">
+                  <p>Seccion 5</p>
+                </a>
+
+              </div>
+            </nav>
+
+
+          </div>
+
+        </article>
+
+        <!-- Modal Window -->
+
+        <article id="modal-window" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Ventana Modal</h3>
+            <br>
+
+          </div>
+
+          <div class="ds_flex_column ds_center gap_1 grid_ext_column">
+
+            <div class="modal-main-container ">
+
+              <a href="#modal-1" class="btn-abrir">Abrirl modal</a>
+
+              <article id="modal-1" class="modal">
+
+                <div class="modal-container">
+
+                  <h3>Titulo del modal</h3>
+
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nam suscipit laudantium ipsam hic sint
+                    soluta, unde praesentium aliquam magni veniam doloremque saepe possimus debitis impedit eius, quas
+                    modi quae!</p>
+
+                  <ul>
+                    <li><a href="">Enlace 1</a></li>
+                    <li><a href="">Enlace 2</a></li>
+                    <li><a href="">Enlace 3</a></li>
+
+                  </ul>
+
+                  <a href="#close" class="btn-abrir btn-cerrar"> Cerrar</a>
+
+                </div>
+
+              </article>
+
+            </div>
+
+          </div>
+
+
+        </article>
+
+
+        <!-- STARWARD INTRO -->
+
+        <article id="starwars-intro" class="mc_box_model">
+
+          <div class="notes grid_ext_column">
+            <h3>Intro Starwars</h3>
+            <br>
+
+            </ul>
+          </div>
+
+          <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+            <article class="starwars">
+
+              <div class="starwars_container">
+                <h2>Episode III</h2>
+                <h3>REVENGE OF THE SITH</h3>
+                <p>
+                  War! The Republic is crumbling
+                  under attacks by the ruthless
+                  Sith Lord, Count Dooku.
+                  There are heroes on both sides.
+                  Evil is everywhere.
+                </p>
+                <p>
+                  In a stunning move, the
+                  fiendish droid leader, General
+                  Grievous, has swept into the
+                  Republic capital and kidnapped
+                  Chancellor Palpatine, leader of
+                  the Galactic Senate.
+                </p>
+
+                <p>
+                  As the Separatist Droid Army
+                  attempts to flee the besieged
+                  capital with their valuable
+                  hostage, two Jedi Knights lead a
+                  desperate mission to rescue the
+                  captive Chancellor....
+                </p>
+
+
+              </div>
+            </article>
+        </article>
+
+      </section>
+
+    </main>
+  </div>
+</body>
+
+</html>
+
+<!------------------------------MODELO DE ARTICULO-------------------------------------->
+
+<!--
+      <article id="ID DE LA SECCION" class="mc_box_model">
+
+        <div class="notes grid_ext_column">
+          <h3>TITULO DE LA SECCION</h3>
+          <br>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div class="ds_flex_row gap_1  grid_ext_column ds_spc_evenly">
+
+          <div class="ds_flex_column ds_center gap_1">
+            <div class="box_dummy card">
+            </div>
+            <code class="text_center"> TITULO DEL EJEMPLO</code>
+          </div>
+
+        </div>
+      </article>
+
+       -->
+
+<!------------------------------MODELO DE ARTICULO-------------------------------------->
