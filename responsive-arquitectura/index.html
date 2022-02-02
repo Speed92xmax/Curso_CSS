@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
   <link rel="stylesheet" href="css/init.css">
   <link rel="stylesheet" media="print" href="css/print.css">
+  <link rel="stylesheet" href="./css/grid_resp.css">
+  <link rel="stylesheet" href="./css/fluid_txt.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -549,6 +551,20 @@
     <hr>
     <article id="responsive-grid" class="full-screen">
       <h2><i>Responsive Grid</i></h2>
+
+      <div class="gird-rsp-con row">
+        <div class="grid-resp-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">Elemento 1</div>
+        <div class="grid-resp-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">Elemento 2</div>
+        <div class="grid-resp-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">Elemento 3</div>
+        <div class="grid-resp-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">Elemento 4</div>
+        <div class="grid-resp-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">Elemento 5</div>
+        <div class="grid-resp-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">Elemento 6</div>
+        <div class="grid-resp-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">Elemento 7</div>
+        <div class="grid-resp-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">Elemento 8</div>
+        <div class="grid-resp-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">Elemento 9</div>
+        <div class="grid-resp-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">Elemento 10</div>
+      </div>
+
     </article>
     <hr>
     <article id="feature-queries" class="full-screen">
@@ -584,7 +600,7 @@
       <h3>Sintaxis</h3>
       <pre><code class="language-css">
 .card {
-  contain: layout inline-size;
+  contain: layout inline-size style;
 }
 
 @container (min-width: 600px) {
@@ -594,7 +610,21 @@
 }
       </code></pre>
       <h3>Ejemplo</h3>
-      <aside></aside>
+
+      <section class="card">
+        <aside class="card-container">
+          <img src="./img/butterfly.jpg" alt="mariposa">
+          <div class="card-container-text">
+            <h4>Titulo de la card</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, magnam totam labore vitae qui
+              repudiandae
+              blanditiis aliquid possimus sint eligendi in quos architecto, asperiores autem esse odit. Facere,
+              laudantium
+              vitae?</p>
+          </div>
+        </aside>
+      </section>
+
     </article>
     <hr>
     <article id="seo" class="full-screen">
@@ -832,8 +862,45 @@
       <aside>
         <h3>Ejemplos <i>Fluid Design</i></h3>
         <h4><i>Grid</i> Fluida</h4>
+        <section class="fluid-container">
+          <div class="fluid-element">Elemento 1</div>
+          <div class="fluid-element">Elemento 2</div>
+          <div class="fluid-element">Elemento 3</div>
+          <div class="fluid-element">Elemento 4</div>
+          <div class="fluid-element">Elemento 5</div>
+          <div class="fluid-element">Elemento 6</div>
+          <div class="fluid-element">Elemento 7</div>
+          <div class="fluid-element">Elemento 8</div>
+          <div class="fluid-element">Elemento 9</div>
+          <div class="fluid-element">Elemento 10</div>
+        </section>
         <h4>Textos Fluidos</h4>
+
+
+        <p class="texto-minimo-2">Lorem ipsum dolor sit amet
+        </p>
+
+        <p class="texto-minimo-1">Lorem ipsum dolor sit amet
+        </p>
+
+        <p class="parrafos">Lorem ipsum dolor sit amet
+        </p>
+
+        <p class="h3">Lorem ipsum dolor sit amet
+        </p>
+
+        <p class="h2">Lorem ipsum dolor sit amet
+        </p>
+
+        <p class="h1">Lorem ipsum dolor, sit amet
+        </p>
+
+
+
         <h4>Contenedores Fluidos</h4>
+
+        <div class="fluid-box"></div>
+
       </aside>
     </article>
   </main>
